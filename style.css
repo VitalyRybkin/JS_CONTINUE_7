@@ -249,7 +249,6 @@ header {
     gap: 223px;
     padding-top: 97px;
     padding-bottom: 126px;
-    /* background: url(./img/subscribe_bg.png); */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -267,7 +266,6 @@ header {
 }
 
 .subscribe-block .subscribe-block-item {
-
     z-index: 1;
 }
 

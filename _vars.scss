@@ -1,0 +1,51 @@
+$siteColor: #F16D7F;
+$blackBG: #222;
+
+@mixin df_jcc {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin df_jcc_aic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin lato_700 {
+    font-family: Lato;
+    font-weight: 700;
+}
+
+@mixin lato_400 {
+    font-family: Lato;
+    font-weight: 400;
+}
+
+@mixin lato_16_400 {
+    @include lato_400();
+    font-size: 16px;
+}
+
+@mixin lato_14_400  {
+    @include lato_20_400();
+    font-size: 14px;
+}
+
+@mixin lato_14_300 {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+@mixin lato_20_400 {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;  
+}
+
+
+
+
+
+

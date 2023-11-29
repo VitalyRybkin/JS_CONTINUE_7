@@ -1,0 +1,122 @@
+@import 'vars';
+
+.product {
+
+    &__pic {
+        @include df_jcc_aic;
+        background-color: #F7F7F7;
+        padding-bottom: 65px;
+    }
+
+    &__info__container {
+        @include df_jcc_aic;
+        flex-direction: column;
+        margin-top: -60px;
+        margin-bottom: 130px;
+        background-color: #fff;
+        border: 1px solid #EAEAEA;
+    }
+
+    &__group {
+        color: $siteColor;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 12px;
+        margin-top: 64px;
+    }
+
+    &__devider {
+        margin-bottom: 12px;
+    }
+
+    &__desc {
+        color: #5E5E5E;
+        text-align: center;
+        margin-bottom: 32px;
+        width: 55%;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    &__price {
+        color: $siteColor;
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 65px;
+    }
+
+    &__title {
+        color: #4D4D4D;
+        font-family: Lato;
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 48px;
+    }
+
+    &__filter {
+        @include df_jcc;
+        gap: 23px;
+        width: 50%;
+        margin-bottom: 48px;
+        padding: 65px 0 48px;
+        border-top: 1px solid #EAEAEA;
+        color: #6F6E6E;
+        @include lato_14_400;
+    }
+
+    &__filter__details summary::marker {
+        display: none; 
+        content: "";
+    }
+    
+    &__filter__details summary {
+        position: relative;
+        margin-right: 23px;
+    }
+
+    &__filter__details summary:hover {
+        cursor: pointer;
+    }
+
+    &__filter__details summary::after {
+        content: url(./img/marker.svg);
+        padding-left: 9px;
+        position: absolute;
+        top: -2px;
+      }
+
+    &__filter__details[open] {
+    @include df_jcc;
+    }
+
+    &__addtocart {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 65px;
+        padding: 15px 73px;
+        border: 1px solid $siteColor;
+        transition: ease-in 0.3s;
+        @include lato_16_400;
+        color: $siteColor;
+    }
+
+
+    &__addtocart:hover {
+        background-color: $siteColor;
+        color: #faf6f7;
+    }
+
+    &__addtocart path {
+        fill: $siteColor;
+        transition: ease-in 0.3s;
+    }
+    
+    &__addtocart:hover path {
+        fill: #faf6f7;
+    }
+}

@@ -1,5 +1,52 @@
 @import 'vars';
 
+.nav-bradcrumbs {
+    background-color: #F8F3F4;
+}
+.bradcrumbs {
+    @include df_jcc;
+    gap: 45%;
+    padding: 65px;
+
+    &__title {
+        width: 194px;
+    color: $siteColor;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    }
+    
+    &__item {
+        @include df_jcc; 
+        padding: 10px 16px;
+        list-style: none;
+    }
+
+    &__item li {
+        @include lato_14_300;
+    }
+
+    &__item li a {
+    color: #636363;
+    text-decoration: none;
+    padding: 2px;
+    }
+
+    &__item__new {
+        color: $siteColor;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 700 !important;
+    }
+
+    &__item li+li:before {
+        padding: 2px;
+        color: #636363 !important;
+        content: "/\00a0";
+        font-weight: 300 !important;
+      }
+
+}
 .product {
 
     &__pic {

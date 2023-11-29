@@ -509,12 +509,12 @@ header {
   line-height: 32px;
 }
 
-.footer-icons-block {
+.footer-img-block {
   display: flex;
   justify-content: center;
   gap: 8px;
 }
-.footer-icons-block__link {
+.footer-img-block__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -523,11 +523,11 @@ header {
   height: 32px;
   transition: ease-in 0.2s;
 }
-.footer-icons-block__link:hover {
+.footer-img-block__link:hover {
   background-color: #F16D7F;
   border: 1px solid #fff;
 }
-.footer-icons-block__link:hover img {
+.footer-img-block__link:hover img {
   filter: invert(100%) sepia(0%) saturate(1104%) hue-rotate(78deg) brightness(115%) contrast(100%);
 }
 

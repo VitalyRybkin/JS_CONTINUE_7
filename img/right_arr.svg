@@ -1,0 +1,20 @@
+<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="8" height="14" fill="#E5E5E5"/>
+<g id="catalog_hover_1140" clip-path="url(#clip0_52_0)">
+<rect width="1600" height="3215" transform="translate(-904 -2222)" fill="white"/>
+<g id="pagination">
+<g id="Pagination">
+<g id="Rounded Rectangle 10">
+<path id="Vector" d="M20.7307 -15H-256.736C-258.539 -15 -260 -13.6569 -260 -12V26C-260 27.6569 -258.539 29 -256.736 29H20.7307C22.5335 29 23.995 27.6569 23.995 26V-12C23.995 -13.6569 22.5335 -15 20.7307 -15Z" fill="white"/>
+<path id="Vector_2" d="M20.7307 -14.5H-256.736C-258.238 -14.5 -259.456 -13.3807 -259.456 -12V26C-259.456 27.3807 -258.238 28.5 -256.736 28.5H20.7307C22.233 28.5 23.4509 27.3807 23.4509 26V-12C23.4509 -13.3807 22.233 -14.5 20.7307 -14.5Z" stroke="#EBEBEB" stroke-linejoin="round"/>
+</g>
+</g>
+<path id="Vector_3" d="M-0.00500488 12L4.995 7L-0.00500488 2L0.994995 0L7.995 7L0.994995 14L-0.00500488 12Z" fill="black"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_52_0">
+<rect width="1600" height="3215" fill="white" transform="translate(-904 -2222)"/>
+</clipPath>
+</defs>
+</svg>

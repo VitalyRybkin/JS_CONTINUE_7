@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'product_style';
+@import 'shop_style';
 
 .center {
     padding: 0 calc(50% - 800px);
@@ -397,6 +398,10 @@ header {
 }
 
 @media(max-width: 1023px) {
+
+    .product__filter__details__main {
+        margin-right: 290px;
+    }
 
     .subscribe-block, .advantage {
         flex-direction: column;

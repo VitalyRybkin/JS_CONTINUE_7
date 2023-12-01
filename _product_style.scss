@@ -5,15 +5,14 @@
 }
 .bradcrumbs {
     @include df_jcc;
-    gap: 45%;
+    gap: 48%;
     padding: 65px;
 
     &__title {
         width: 194px;
-    color: $siteColor;
-    font-family: Lato;
-    font-size: 24px;
-    font-weight: 400;
+        color: $siteColor;
+        @include lato_400;
+        font-size: 24px;
     }
     
     &__item {
@@ -27,9 +26,9 @@
     }
 
     &__item li a {
-    color: #636363;
-    text-decoration: none;
-    padding: 2px;
+        color: #636363;
+        text-decoration: none;
+        padding: 2px;
     }
 
     &__item__new {
@@ -106,7 +105,6 @@
     &__filter {
         @include df_jcc;
         gap: 23px;
-        width: 50%;
         margin-bottom: 48px;
         padding: 65px 0 48px;
         border-top: 1px solid #EAEAEA;

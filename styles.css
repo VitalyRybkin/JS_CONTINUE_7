@@ -568,6 +568,122 @@
   top: 1px;
 }
 
+.registration {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 64px 230px 96px;
+}
+
+.registration-info {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.registration-info section {
+  display: flex;
+  flex-direction: column;
+}
+.registration-info__header {
+  margin-bottom: 20px;
+  color: #222;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+}
+.registration-info__section {
+  margin-bottom: 35px;
+}
+.registration-info__input {
+  width: 360px;
+  height: 45px;
+  margin-bottom: 20px;
+  padding: 12px 17px;
+  border: 1px solid #E2E2E2;
+  color: #B1B1B1;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+}
+.registration-info__pass-desc {
+  width: 360px;
+  color: #B1B1B1;
+  font-family: Lato;
+  font-size: 13px;
+  font-weight: 300;
+}
+.registration-info fieldset {
+  display: flex;
+  align-items: center;
+  border: none;
+  color: #000;
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 300;
+}
+.registration-info label {
+  margin-right: 20px;
+}
+.registration-info__radio {
+  margin-right: 10px;
+  border: 1px solid #A4A4A4;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  transition: all ease-in 0.2s;
+}
+.registration-info__radio:checked {
+  background-color: #F16D7F;
+  border: 1px solid #F16D7F;
+}
+.registration-info__button {
+  width: 167px;
+  height: 50px;
+  border: none;
+  background-color: #F16D7F;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  transition: ease-in 0.2s;
+}
+.registration-info__button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #F16D7F;
+  font-weight: 500;
+  border: 1px solid #F16D7F;
+}
+.registration-info__button:hover path {
+  fill: #F16D7F;
+}
+
+.registration-offers {
+  width: 652px;
+  color: #000;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 300;
+}
+.registration-offers__header {
+  margin-bottom: 22px;
+}
+.registration-offers__text {
+  margin-bottom: 22px;
+}
+.registration-offers__task {
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+.registration-offers__task::before {
+  content: url(./img/list_style.svg);
+  margin-right: 6px;
+}
+
 .center {
   padding: 0 calc(50% - 800px);
 }

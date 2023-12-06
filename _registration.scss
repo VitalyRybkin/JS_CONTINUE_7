@@ -1,0 +1,127 @@
+@import 'vars';
+
+.registration {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 64px 230px 96px;
+}
+
+.registration-info {
+    padding-left: 24px;
+    padding-right: 24px;
+
+    & section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__header {
+        margin-bottom: 20px;
+        color: #222;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    &__section {
+        margin-bottom: 35px;}
+
+    &__input {
+        width: 360px;
+        height: 45px;
+        margin-bottom: 20px;
+        padding: 12px 17px;
+        border: 1px solid #E2E2E2;
+        color: #B1B1B1;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    &__pass-desc {
+        width: 360px;
+        color: #B1B1B1;
+        font-family: Lato;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    & fieldset {
+        display: flex;
+        align-items: center;
+        border: none;
+        color: #000;
+        font-family: Lato;
+        font-size: 11px;
+        font-weight: 300;
+    }
+
+    & label {
+        margin-right: 20px;
+    }
+
+    &__radio {
+        margin-right: 10px;
+        border:1px solid #A4A4A4;
+        appearance:none;
+        border-radius:50%;
+        width:12px;
+        height:12px;
+        background-color:#fff;
+        transition:all ease-in 0.2s;
+
+        &:checked {
+            background-color: $siteColor;
+            border:1px solid $siteColor;
+        }
+    }
+
+    &__button {
+        width: 167px;
+        height: 50px;
+        border: none;
+        background-color: $siteColor;
+        color: #FFF;
+        @include lato_14_400;
+        transition: ease-in 0.2s;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #fff;
+            color: $siteColor;
+            font-weight: 500;
+            border: 1px solid $siteColor;
+        }
+
+        &:hover path {
+            fill: $siteColor;
+        }
+    }
+}
+
+.registration-offers {
+    width: 652px;
+    color: #000;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 300;
+    
+    &__header {
+        margin-bottom: 22px;
+    }
+
+    &__text {
+        margin-bottom: 22px;
+    }
+
+    &__task {
+        list-style-type: none;
+        margin-bottom: 16px;
+    }
+
+    &__task::before {
+        content: url(./img/list_style.svg);
+        margin-right: 6px;
+    }
+}

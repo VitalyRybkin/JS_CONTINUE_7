@@ -4,8 +4,9 @@
     background-color: #F8F3F4;
 }
 .bradcrumbs {
-    @include df_jcc;
-    gap: 48%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 190px;
     padding: 65px;
 
     &__title {

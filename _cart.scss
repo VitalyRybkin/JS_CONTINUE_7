@@ -1,0 +1,229 @@
+@import 'vars';
+.cart {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 96px 230px 128px;
+
+    & span {
+        color: $siteColor;
+        padding-left: 5px;
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+
+        &_products{
+            min-width: 652px;
+        }
+
+        &_info {
+            width: 360px;
+            padding: 17px 0 0 0;
+        }
+    }
+
+    &__card {
+        display: flex;
+        margin-bottom: 40px;
+        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+
+        &__input {
+            margin-left: 24px;
+            width: 44px;
+            height: 25px;
+            text-align: center;
+            border: 1px solid rgba(234, 234, 234, 1);
+        }
+
+        &__delbox {
+            display: flex;
+            justify-content: end;
+            flex: 1 1 auto;
+            padding: 28px 22px
+        }
+
+        &__delbut {
+            width: 22px;
+            height: 22px;
+            border: none;
+            background-color: transparent;
+        }
+
+        &__delbut:hover {
+            cursor: pointer;
+
+            & path {
+                fill: $siteColor;
+            }
+        }
+
+    }
+
+    &__card__header {
+        margin-bottom: 42px;
+        width: 262px;
+        color: #222;
+        font-family: Lato;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    &__card__info {
+        padding: 22px 0 0 31px;
+    }
+
+    &__card__product_info {
+        margin-bottom: 6px;
+        color: #575757;
+        font-family: Lato;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    &__card__product_info:last-child {
+        display: flex;
+        align-items: center;
+    }
+
+
+    &__info{
+
+        &_header {
+            margin-bottom: 20px;
+            color: #222;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        &:last-child {
+            background-color: #F5F3F3;
+            width: 360px;
+        }
+
+        &__container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 39px 34px 42px;
+        }
+
+        &_total {
+            display: flex;
+            align-items: end;
+            flex-direction: column;
+            width: 100%;
+            padding-bottom: 21px;
+            margin-bottom: 17px;
+            border-bottom: 1px solid #E2E2E2;
+        }
+
+        &_subtotal {
+            color: #4A4A4A;
+            font-family: Lato;
+            font-size: 11px;
+            font-weight: 400;
+            margin-bottom: 12px;
+        }
+
+        &_grandtotal {
+            color: #222;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        &_button {
+            width: 232px;
+            height: 50px;
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: 300;
+            background-color: $siteColor;
+            border:1px solid $siteColor;
+            display:inline-block;
+            cursor:pointer;
+            color:#fff;
+            padding:16px 31px;
+            text-decoration:none;
+            transition: ease-in 0.2s;
+        }
+
+        &_button:hover {
+            color: $siteColor;
+            background-color: #fff;
+            border:1px solid $siteColor;
+            font-weight: 400;
+        }
+
+        &__input__box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__input {
+            padding: 13px 0 16px 18px;
+            margin-bottom: 20px;
+            border: 1px solid #A4A4A4;
+            color: #B1B1B1;
+            font-family: Lato;
+            font-size: 13px;
+            font-weight: 300;
+        }
+
+        &__input__button {
+            width: 100px;
+            height: 35px;
+            margin-bottom: 57px;
+            color: #4A4A4A;
+            background: #fff;
+            border: 1px solid rgba(164, 164, 164, 1);
+            font-family: Lato;
+            font-size: 11px;
+            font-weight: 300;
+            transition: ease-in 0.2s;
+        }
+
+        &__input__button:hover {
+            color: #fff;
+            background-color: $siteColor;
+            border:1px solid $siteColor;
+            cursor: pointer;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__button {
+        width: 225px;
+        height: 50px;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: 300;
+        background-color: #fff;
+        border:1px solid #A4A4A4;
+        display:inline-block;
+        cursor:pointer;
+        color:#000;
+        padding:16px 31px;
+        text-decoration:none;
+        transition: ease-in 0.2s;
+    }
+
+    &__button:hover {
+        color: #fff;
+        background-color: $siteColor;
+        border:1px solid $siteColor;
+        font-weight: 400;
+    }
+
+    &__button:active {
+        position:relative;
+        top:1px;
+    }
+}

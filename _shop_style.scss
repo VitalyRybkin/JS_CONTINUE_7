@@ -1,14 +1,13 @@
 .filter-sort {
     display: flex;
-    justify-content: start;
+    margin: 0 230px;
 }
 
 .filter {
-    margin-right: 160px;
+    width: 374px;
     padding-top: 35px;
 
     &__box {
-        margin: 0 230px;
         position: relative;
     }
 
@@ -238,5 +237,36 @@
 
     &__box a:last-child {
         transform: rotate(180deg);
+    }
+}
+
+@media(max-width: 2559px) {
+    .filter {
+        width: 324px;
+    }
+}
+
+@media(max-width: 1439px) {
+    .bradcrumbs {
+        margin: 0;
+        padding: 65px 40px;
+    }
+
+    .filter-sort {
+        margin: 0;
+    }
+
+    .filter {
+        margin-right: 300px;
+    }
+
+    .featured-item:last-child {
+        display: none;
+    }
+}
+
+@media(max-width: 1023px) {
+    .filter {
+        margin-right: 85px;
     }
 }

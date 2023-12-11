@@ -3,8 +3,7 @@
 .registration {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 64px 230px 96px;
+    margin: 64px 230px 636px;
 }
 
 .registration-info {
@@ -123,5 +122,22 @@
     &__task::before {
         content: url(./img/list_style.svg);
         margin-right: 6px;
+    }
+}
+
+@media(max-width: 2559px) {
+    .registration {
+        margin-bottom: 96px;
+    }
+}
+
+@media(max-width: 1439px) {
+    .registration {
+        margin: 64px 15px 96px;
+    }
+
+    .registration-offers {
+        font-size: 16px;
+        
     }
 }

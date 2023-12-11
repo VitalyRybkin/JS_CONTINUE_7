@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 190px;
-  padding: 65px;
+  padding: 65px 48px;
 }
 .bradcrumbs__title {
   width: 194px;
@@ -158,15 +158,14 @@
 
 .filter-sort {
   display: flex;
-  justify-content: start;
+  margin: 0 230px;
 }
 
 .filter {
-  margin-right: 160px;
+  width: 374px;
   padding-top: 35px;
 }
 .filter__box {
-  margin: 0 230px;
   position: relative;
 }
 .filter__box__details {
@@ -374,11 +373,38 @@
   transform: rotate(180deg);
 }
 
+@media (max-width: 2559px) {
+  .filter {
+    width: 324px;
+  }
+}
+@media (max-width: 1439px) {
+  .bradcrumbs {
+    margin: 0;
+    padding: 65px 40px;
+  }
+  .filter-sort {
+    margin: 0;
+  }
+  .filter {
+    margin-right: 300px;
+  }
+  .featured-item:last-child {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .filter {
+    margin-right: 85px;
+  }
+}
 .cart {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 96px 230px 128px;
+  margin: 96px 230px 363px;
+  min-width: -moz-min-content;
+  min-width: min-content;
 }
 .cart span {
   color: #F16D7F;
@@ -568,11 +594,45 @@
   top: 1px;
 }
 
+@media (max-width: 2559px) {
+  .cart {
+    margin-bottom: 128px;
+  }
+  .cart__box_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 735px;
+    margin-top: 64px;
+  }
+  .cart__info {
+    width: 360px;
+  }
+  .cart__info:last-child {
+    margin-top: 14px;
+  }
+  .cart__box_products {
+    width: 734px;
+  }
+  .cart__info__input__button {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1439px) {
+  .cart {
+    margin: 96px 145px 128px;
+  }
+}
+@media (max-width: 1023px) {
+  .cart {
+    margin: 96px 15px 128px;
+  }
+}
 .registration {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 64px 230px 96px;
+  margin: 64px 230px 636px;
 }
 
 .registration-info {
@@ -684,6 +744,19 @@
   margin-right: 6px;
 }
 
+@media (max-width: 2559px) {
+  .registration {
+    margin-bottom: 96px;
+  }
+}
+@media (max-width: 1439px) {
+  .registration {
+    margin: 64px 15px 96px;
+  }
+  .registration-offers {
+    font-size: 16px;
+  }
+}
 .center {
   padding: 0 calc(50% - 800px);
 }
@@ -1061,6 +1134,7 @@ header {
 @media (max-width: 1439px) {
   .top-bar {
     padding: 0;
+    justify-content: space-between;
   }
   .content-menu {
     margin: 0 16px 96px;

@@ -270,3 +270,39 @@
         margin-right: 85px;
     }
 }
+
+@media(max-width: 767px) {
+    .filter {
+        width: 70px;
+        margin-right: 0;
+    }
+
+    .filter__box__details {
+        padding: 8px 22px 16px;
+    }
+    .filter__box__summary {
+        width: 40px;
+        height: 40px;
+    }
+    .filter__box__summary span {
+        display: none;
+    }
+
+    .filter__box__summary svg {
+        transform:scale(1.2);
+        width: 30px;
+        height: auto;
+    }
+
+    .filter__box__details {
+        width: 50px;
+    }
+
+    .sort {
+        width: 225px;
+    }
+
+    .sort__parameter {
+        padding: 13px 0px 16px;
+    }
+}

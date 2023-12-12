@@ -10,7 +10,6 @@
     padding: 65px 48px;
 
     &__title {
-        width: 194px;
         color: $siteColor;
         @include lato_400;
         font-size: 24px;
@@ -164,5 +163,28 @@
     
     &__addtocart:hover path {
         fill: #faf6f7;
+    }
+}
+
+@media(max-width: 767px) {
+
+    .bradcrumbs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bradcrumbs__title {
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .product__pic img {
+        width: 374px;
+        height: 454px;
+    }
+
+    .product__filter {
+        gap: 10px;
     }
 }

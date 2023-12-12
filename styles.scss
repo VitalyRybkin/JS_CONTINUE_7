@@ -10,7 +10,7 @@
 
 .top-bar {
     @include df_jcc;
-    gap: 50%;
+    gap: 48%;
     background-color: black;
 
     &-item {
@@ -433,6 +433,15 @@ header {
 }
 
 @media(max-width: 767px) {
+
+    .top-bar-item {
+        gap: 0;
+    }
+
+    .top-bar-item a{
+        width: 60px;
+    }
+
 
     .user, .chart {
         display: none;

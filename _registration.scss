@@ -141,3 +141,25 @@
         
     }
 }
+
+@media(max-width: 767px) {
+
+    .registration {
+        flex-direction: column;
+        margin-top: 48px;
+    }
+
+    .registration-info {
+        margin-bottom: 40px;
+        padding: 0;
+
+        &__input {
+            width: inherit;;
+        }
+    }
+
+    .registration-offers {
+        width: inherit;
+        padding-left: 0;
+    }
+}

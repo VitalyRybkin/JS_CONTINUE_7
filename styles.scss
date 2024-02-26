@@ -119,6 +119,10 @@ header {
     font-size: 30px;
 }
 
+.featured-header_cart {
+    margin-bottom: 30px;
+}
+
 .featured-text {
     margin-bottom: 57px;
     text-align: center;
@@ -134,29 +138,75 @@ header {
     column-gap: 30px;
 
     &-item {
+        display: block;
+        position: relative;
         background-color: #F8F8F8;
         background-size: cover;
+        transition: .2s ease-in;
     }
 
-    &-item img {
-        margin-bottom: 24px;
+    &-item:hover {
+        -webkit-box-shadow: 8px 15px 50px -9px rgba(0,0,0,0.5);
+        -moz-box-shadow: 8px 15px 50px -9px rgba(0,0,0,0.5);
+        box-shadow: 8px 15px 50px -9px rgba(0,0,0,0.5);
+    }
+
+    &-item__pic {
+        //margin-bottom: 24px;
         width: 100%;
+        transition: .2s ease-in;
+    }
+
+    &-item:hover &-item__pic {
+        filter: brightness(30%);
     }
 
     &-item__name {
         margin-left: 18px;
         color: #000;
         @include lato_14_400;
-        text-decoration: underline;
-        text-decoration-color: black;
-        transition: all .2s ease-in;
+        padding-top: 24px;
+        //text-decoration: underline;
+        //text-decoration-color: black;
+        //transition: all .2s ease-in;
     }
-    
-    &-item__name:hover {
-        text-decoration-color: #F26376;
+
+    //&-item__name:hover {
+    //    text-decoration-color: #F26376;
+    //}
+
+    &-item__cart_box {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        width: 100%;
+        top: 150px;
+        color: #FFF;
     }
-    
-    
+
+    &-item__cart_add {
+        display: none;
+        align-items: center;
+        padding: .5rem 1rem;
+        border: 1px solid #FFF;
+        font-family: Lato, sans-serif;
+        line-height: 1.2;
+        transition: ease-in .2s;
+    }
+
+    &-item:hover &-item__cart_add {
+        display: flex;
+    }
+
+    &-item__cart_add:hover {
+        color: $siteColor;
+        border-color: $siteColor;
+    }
+
+    &-item__cart_box img {
+        margin-right: 10px;
+    }
+
     &-item__desc {
         margin: 12px 18px 18px;
         color: #5D5D5D;
@@ -168,6 +218,10 @@ header {
         margin-left: 18px;
         color: $siteColor;
         @include lato_16_400;
+    }
+
+    &-item__link {
+        cursor: pointer;
     }
     
 }
@@ -189,6 +243,11 @@ header {
 .browse-button:hover {
     background-color: $siteColor;
     color: #faf6f7;
+}
+
+.cart-items {
+    display: none;
+    margin: 50px 230px;
 }
 
 .advantage {

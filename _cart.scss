@@ -6,11 +6,6 @@
     margin: 96px 230px 363px;
     min-width: min-content;
 
-    & span {
-        color: $siteColor;
-        padding-left: 5px;
-    }
-
     &__box{
         display: flex;
         flex-direction: column;
@@ -40,7 +35,7 @@
 
         &__delbox {
             display: flex;
-            justify-content: end;
+            justify-content: center;
             flex: 1 1 auto;
             padding: 28px 22px
         }
@@ -58,6 +53,13 @@
             & path {
                 fill: $siteColor;
             }
+        }
+
+
+
+        & span {
+            color: $siteColor;
+            padding-left: 5px;
         }
 
     }
